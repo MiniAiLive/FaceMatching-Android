@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mainLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/grediant_background"
+    android:fitsSystemWindows="true">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginBottom="0dp"
+        android:adjustViewBounds="true"
+        android:cropToPadding="true"
+        android:src="@drawable/company_name" />
+
+    <!-- Circular Image 1 with GIF Overlay -->
+    <FrameLayout
+        android:layout_width="280dp"
+        android:layout_height="280dp"
+        android:layout_weight="1"
+        android:layout_gravity="center"
+        android:padding="@dimen/base_padding">
+
+        <!-- Circular Image 1 -->
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/circle_img1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/transparent"
+            android:src="@drawable/user"
+            app:civ_border_width="1dp"
+            app:civ_border_color="@color/white"/>
+
+        <!-- GIF Overlay Image 1 -->
+        <ImageView
+            android:id="@+id/gif_overlay_img1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="fitCenter" />
+        <TextView
+            android:id="@+id/tv_first_image_placeholder"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/firstImagePlaceholder"
+            android:textSize="16dp"
+            android:textColor="@android:color/black"/>
+    </FrameLayout>
+
+    <!-- Button for Face Comparison -->
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@color/transparent">
+            <LinearLayout
+                android:id="@+id/circular_progress_view"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:layout_marginHorizontal="10dp"
+                android:background="@drawable/white_background_radius">
+
+                <!-- First Section: Info Icon -->
+                <ImageView
+                    android:id="@+id/iv_result_info_img"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:src="@drawable/info"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginStart="10dp"
+                    app:tint="@color/dark_red"/>
+
+                <!-- Second Section: Title and Detail Text -->
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+                    <TextView
+                     android:id="@+id/title_text"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="%95.4"
+                        android:textSize="50sp"
+                        android:textColor="@color/dark_red"
+                        android:textFontWeight="@integer/material_motion_duration_long_1"
+                        android:gravity="center" />
+                    <TextView
+                    android:id="@+id/detail_text"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Similarity: So High"
+                        android:textSize="20sp"
+                        android:textColor="@color/dark_red"
+                        android:gravity="center"
+                        android:textFontWeight="@integer/material_motion_duration_long_1"
+                        android:layout_marginBottom="20dp"/>
+                </LinearLayout>
+                <ImageView
+                    android:id="@+id/iv_result_refresh_img"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:src="@drawable/refresh"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="10dp"
+                    app:tint="@color/dark_red"/>
+
+            </LinearLayout>
+        <Button
+            android:id="@+id/btn_compare_faces"
+            android:layout_width="350dp"
+            android:layout_height="60dp"
+            android:layout_gravity="center"
+            android:backgroundTint="@android:color/white"
+            android:text="@string/compare_face"
+            android:textColor="@color/primary"
+            android:textSize="14dp"
+            android:theme="@style/Button.White"
+            app:layout_constraintTop_toBottomOf="@id/circle_img1" />
+    </FrameLayout>
+
+    <!-- Circular Image 2 with GIF Overlay -->
+    <FrameLayout
+        android:layout_width="280dp"
+        android:layout_height="280dp"
+        android:layout_weight="1"
+        android:layout_gravity="center"
+        android:padding="@dimen/base_padding">
+
+        <!-- Circular Image 2 -->
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/circle_img2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/transparent"
+            android:src="@drawable/user"
+            app:civ_border_width="1dp"
+            app:civ_border_color="@color/white"/>
+
+        <!-- GIF Overlay Image 2 -->
+        <ImageView
+            android:id="@+id/gif_overlay_img2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="fitCenter" />
+        <TextView
+            android:id="@+id/tv_second_image_placeholder"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/secondImagePlaceholder"
+            android:textSize="16dp"
+            android:textColor="@android:color/black"/>
+    </FrameLayout>
+
+</LinearLayout>
