@@ -27,6 +27,12 @@ https://drive.google.com/file/d/1N8MQLgq8EAiins5f3OjQhMRL8oEr5VlH/view?usp=shari
 <br></br>
 
 
+
+https://github.com/MiniAiLive/MiniAI-Face-Matching-AndroidSDK/assets/153516004/2ca77947-84ce-438c-8a4f-33426c758742
+
+
+<br></br>
+
 ## About MiniAiLive
 [MiniAiLive](https://www.miniai.live/) is a leading AI solutions company specializing in computer vision and machine learning technologies. We provide cutting-edge solutions for various industries, leveraging the power of AI to drive innovation and efficiency.
 
