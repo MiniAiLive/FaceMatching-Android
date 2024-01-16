@@ -7,14 +7,18 @@
 ## Welcome to the [MiniAiLive](https://www.miniai.live/)!
 Check the likelihood that two faces belong to the same person. You will get a confidence score and thresholds to evaluate the similarity. Feel free to use our MiniAI Face Matching Android SDK.
 
-You can download release APK here. 
-```
-https://drive.google.com/file/d/1N8MQLgq8EAiins5f3OjQhMRL8oEr5VlH/view?usp=sharing
-```
 
 > **Note**
 >
-> SDK is fully on-premise, processing all happens on hosting server and no data leaves server.
+> SDK is fully on-premise, processing all happens on hosting server and no data leaves server..
+
+<br></br>
+
+## Enjoy APP on Google Play
+<a href="https://play.google.com/store/apps/details?id=com.miniai.facematch" target="_blank">
+  <img alt="" src="https://user-images.githubusercontent.com/125717930/230804673-17c99e7d-6a21-4a64-8b9e-a465142da148.png" height=80/>
+</a>
+
 
 ## Test Result
 <img src="https://github.com/MiniAiLive/MiniAI-Face-Matching-AndroidSDK/assets/153516004/3b07f850-0606-4d4a-b5cc-e9ed34c1f8e8" alt="Test1" width="160" />
