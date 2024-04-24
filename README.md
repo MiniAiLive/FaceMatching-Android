@@ -52,6 +52,9 @@ Contributions are welcome! If you'd like to contribute to this project, please f
 
 ## Try Online Demo
 Please visit our Face API Web Demo here. https://demo.miniai.live
+<a href="https://demo.miniai.live" target="_blank">
+  <img alt="" src="https://github.com/MiniAiLive/MiniAI-Face-Matching-WindowsDemo/assets/127708602/16f7a0eb-7fdb-42c2-8f15-ccd2d6b032bc">
+</a>
 
 ## Related Product
 No | Project | Feature
